@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WaitOnMe</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+  <div>
+    <div>
+      <img id="logo" src="https://s3-us-west-1.amazonaws.com/waitonme/logo.png" alt="" />
+      <img id="NavBar" src="https://s3-us-west-1.amazonaws.com/waitonme/Nav+Bar.png" alt="" />
+    </div>
+    <div id="Photos"></div>
+    <!-- <div id="Header"></div> -->
+    <div>
+      <img id="OverviewPhoto" src="https://s3-us-west-1.amazonaws.com/waitonme/test/OverviewHeader.png" alt="" />
+    </div>
+    <div id="Reservations"></div>
+    <div id="Menu"></div>
+    <!-- <div id="Overview"></div> -->
+    <div id="SideBar">
+      <div>
+        <img class="bar" src="https://s3-us-west-1.amazonaws.com/waitonme/test/Sidebar+Map.png" alt="" />
+      </div>
+      <div>
+        <img class="bar" src="https://s3-us-west-1.amazonaws.com/waitonme/test/Sidebar+Part+1.png" alt="" />
+      </div>
+      <div>
+        <img class="bar" src="https://s3-us-west-1.amazonaws.com/waitonme/test/Sidebar+Part+2.png" alt="" />
+      </div>
+    </div>
+
+
+  </div>
+
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
+
+  <script src="http://ec2-18-206-121-61.compute-1.amazonaws.com/bundle.js"></script>
+  <script src="http://ec2-18-191-229-0.us-east-2.compute.amazonaws.com/bundle.js"></script>
+  <script src="http://ec2-3-17-28-103.us-east-2.compute.amazonaws.com/bundle.js"></script>
+  <!-- <script src="http://ec2-18-191-13-163.us-east-2.compute.amazonaws.com/bundle.js"></script> -->
+
+  <script>
+    ReactDOM.render(
+      React.createElement(Photos),
+      document.getElementById('Photos')
+    );
+    ReactDOM.render(
+      React.createElement(Reservations),
+      document.getElementById('Reservations')
+    );
+    ReactDOM.render(
+      React.createElement(Menu),
+      document.getElementById('Menu')
+    );
+    // ReactDOM.render(
+    //   React.createElement(Overview),
+    //   document.getElementById('Overview')
+    // );
+    // ReactDOM.render(
+    //   React.createElement(Header),
+    //   document.getElementById('Header')
+    // );
+  </script>
+</body>
+
+</html>
