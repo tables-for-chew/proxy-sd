@@ -14,15 +14,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/photos', proxy({
   target: 'http://ec2-18-222-149-148.us-east-2.compute.amazonaws.com/'
 }));
-// app.use('/api/reserve', proxy({
-//   target: 'http://ec2-18-191-229-0.us-east-2.compute.amazonaws.com/'
-// }));
-// app.use('/api/menu', proxy({
-//   target: 'http://ec2-3-17-28-103.us-east-2.compute.amazonaws.com'
-// }));
-// app.use('/overview', proxy({
-//   target: 'http://ec2-18-191-13-163.us-east-2.compute.amazonaws.com/'
-// }));
+app.use('/api/reserve', proxy({
+  target: 'http://ec2-18-222-239-157.us-east-2.compute.amazonaws.com/'
+}));
+app.use('/api/menu', proxy({
+  target: 'http://ec2-18-223-135-231.us-east-2.compute.amazonaws.com/'
+}));
+app.use('/overview', proxy({
+  target: 'http://ec2-3-92-162-226.compute-1.amazonaws.com/'
+}));
 // app.use('/overview', proxy({
 //   target: ''
 // }));
