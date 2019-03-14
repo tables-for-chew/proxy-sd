@@ -12,12 +12,12 @@ const PORT = process.env.PORT || 8008;
 // app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/photos', proxy({
-  target: 'ec2-18-222-149-148.us-east-2.compute.amazonaws.com'
+  target: 'http://ec2-18-222-149-148.us-east-2.compute.amazonaws.com/'
 }));
 // app.use('/api/reserve', proxy({
 //   target: 'http://ec2-18-191-229-0.us-east-2.compute.amazonaws.com/'
 // }));
-// app.use('/menu', proxy({
+// app.use('/api/menu', proxy({
 //   target: 'http://ec2-3-17-28-103.us-east-2.compute.amazonaws.com'
 // }));
 // app.use('/overview', proxy({
